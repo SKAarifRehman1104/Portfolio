@@ -141,7 +141,7 @@
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <img src="assets/img/about.webp" alt="" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">Web developer, with extensive knowledge and years of experience, working in web technologies, developing quality work.</p>
@@ -611,29 +611,26 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" class="contact__form grid" onsubmit="sendEmail(); reset(); return false;">
+                    <form action="https://getform.io/f/wbrkkjea" method="POST" class="contact__form grid" enctype="multipart/form-data">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="Name" class="contact__label">Name</label>
-                                <textarea type="text" class="contact__input" id="Name" required></textarea>
+                                <textarea type="text" class="contact__input" id="Name" name="name" required></textarea>
                             </div>
 
                             <div class="contact__content">
                                 <label for="Email" class="contact__label">Email</label>
-                                <textarea type="email" class="contact__input" id="Email" required></textarea>
+                                <textarea type="email" class="contact__input" id="Email" name="email" required></textarea>
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="subject" class="contact__label">Subject</label>
-                            <textarea type="text" class="contact__input" id="subject" required></textarea>
+                            <label for="subject" class="contact__label">Message</label>
+                            <textarea type="text" cols="0" rows="7" class="contact__input" id="subject" name="subject" required></textarea>
                         </div>
-                        <div class="contact__content">
-                            <label for="Data" class="contact__label">Message</label>
-                            <textarea name="" cols="0" rows="7" class="contact__input" id="Data" required></textarea>
-                        </div>
+        
 
                         <div>
-                            <button  class="button button--flex" style="border: none; font-family: var(--body-font);">
+                            <button  class="button button--flex" style="border: none; font-family: var(--body-font); " type="submit">
                                  Send message
                                 <i class="uil uil-message button__icon"></i>
                             </button>

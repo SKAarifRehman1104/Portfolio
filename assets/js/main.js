@@ -237,23 +237,23 @@ window.addEventListener("mousemove", function (e) {
 
 
 
-function sendEmail(){
-  var name = document.getElementById("Name").value;
-  var email = document.getElementById("Email").value;
-  var subject = document.getElementById("subject").value;
-  var data = document.getElementById("Data").value;
+// function sendEmail(){
+//   var name = document.getElementById("Name").value;
+//   var email = document.getElementById("Email").value;
+//   var subject = document.getElementById("subject").value;
+//   var data = document.getElementById("Data").value;
   
-  var body = "Name:" + name + "<br/> Email:" + email + "<br/> Message:" + data;
+//   var body = "Name:" + name + "<br/> Email:" + email + "<br/> Message:" + data;
 
-  Email.send({
-    Host : "smtp.elasticemail.com",  
-    Username : "skaarifrehman7863@gmail.com",
-    Password : "B0429BC818EFAFD41EBAF0DE58A3824CF785",
-    To : 'skaarif.rehmancs2020@indoreinstitute.com',
-    From : "skaarifrehman7863@gmail.com",
-    Subject : subject,
-    Body : body
-  }).then(
-    message => alert(message)
-  );
-}
+//   Email.send({
+//     Host : "smtp.elasticemail.com",  
+//     Username : "skaarifrehman7863@gmail.com",
+//     Password : "B0429BC818EFAFD41EBAF0DE58A3824CF785",
+//     To : 'skaarifrehman7863@gmail.com,
+//     From : "skaarifrehman7863@gmail.com",
+//     Subject : subject,
+//     Body : body
+//   }).then(
+//     message => alert(message)
+//   );
+// }
